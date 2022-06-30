@@ -372,32 +372,37 @@ auxiliary.ckpt文件获取：从 https://cg.cs.tsinghua.edu.cn/people/~Yongjin/A
 
 ### 训练性能
 
-| --------------------------| ---------------------- | ---------------------- |
-| 模型版本                  | APDrawingGAN           |APDrawingGAN           |
-| 上传日期                  | 2021-12-09      |2022-03-07      |
-| MindSpore版本             | 1.3.0              |1.5.0              |
-| 数据集                    |          APDrawingDB     |APDrawingDB     |
-| 训练参数                  | epoch=300, lr=0.0002, bata1=0.5             |epoch=300, lr=0.0002, bata1=0.5             |
-| 优化器                    | Adam                                                    |Adam                   |
-| 损失函数                  | Distance transformer loss & L1 loss                                    |Distance transformer loss & L1 loss    |
-| 输出                      | 图片                                                         |图片  |
+| 参数                      | Ascend               |
+| --------------------------| ---------------------- | 
+| 模型版本                  | APDrawingGAN           |
+| 资源                      | Ascend 910；CPU 2.60GHz，192核；内存 755G；系统 Euler2.8 |
+| 上传日期                  | 2021-12-09      |
+| MindSpore版本             | 1.3.0              |
+| 数据集                    |          APDrawingDB     |
+| 训练参数                  | epoch=300, lr=0.0002, bata1=0.5             |
+| 优化器                    | Adam                                                    |
+| 损失函数                  | Distance transformer loss & L1 loss                                    |
+| 输出                      | 图片                                                         |
 | 损失                      |GANLoss,L1Loss,localLoss,DTLoss|GANLoss,L1Loss,localLoss,DTLoss|
-| 速度                      | 单卡：357毫秒/步;  8卡：380毫秒/步                      |单卡: 442毫秒/步;8卡：506毫秒/步|
-| 总时长                    | 单卡：750分钟;  8卡：120分钟                      |单卡：920分钟 ; 8卡：140分钟 |
-| 微调检查点                | 243.37MB (.ckpt文件)                             |273.43MB (.ckpt文件)|
+| 速度                      | 单卡：357毫秒/步;  8卡：380毫秒/步                      |
+| 总时长                    | 单卡：750分钟;  8卡：120分钟                      |
+| 微调检查点                | 243.37MB (.ckpt文件)                             |
 | 推理模型                  | 250.53M(.mindir) |
 | 脚本                      | [APDrawingGAN脚本](https://gitee.com/yang-mengYM/models_1/tree/master/research/cv/APDrawingGAN) |
 
 ### 评估性能
 
-| ------------------- | --------------------------- |--------------------------- |
-| 模型版本       | APDrawingGAN                |APDrawingGAN  |
-| 上传日期       | 2021-12-09 |2022-03-07      |
-| MindSpore 版本   | 1.3.0                       |1.5.0|
-| 数据集             | APDrawingDB |APDrawingDB |
-| batch_size          | 1                         |1   |
-| 输出             | 图片      | 图片      |
+| 参数          | Ascend                      |
+| ------------------- | --------------------------- |
+| 模型版本       | APDrawingGAN                |
+| 资源            |  Ascend 910；系统 Euler2.8                  |
+| 上传日期       | 2021-12-09 |2
+| MindSpore 版本   | 1.3.0                       |
+| 数据集             | APDrawingDB |
+| batch_size          | 1                         |
+| 输出             | 图片      | 
 | 推理模型 | 250.53M(.mindir) |
+
 
 # 随机情况说明
 

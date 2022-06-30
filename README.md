@@ -251,15 +251,6 @@ auxiliary.ckpt文件获取：从 https://cg.cs.tsinghua.edu.cn/people/~Yongjin/A
 
 ### 训练
 
-
-  ```bash
-  ```
-
-  或
-
-  ```bash
-  ```
-
 - Ascend处理器环境运行
 
   ```bash
@@ -311,9 +302,6 @@ auxiliary.ckpt文件获取：从 https://cg.cs.tsinghua.edu.cn/people/~Yongjin/A
 
 ### 分布式训练
 
-
-    ```bash
-    ```
 
 - Ascend处理器环境运行
 
